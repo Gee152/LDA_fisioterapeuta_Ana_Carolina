@@ -1,9 +1,9 @@
-import { MapPin, Instagram, Facebook, Phone } from 'lucide-react';
+import { MapPin, Instagram } from 'lucide-react';
 import { motion } from 'motion/react';
+// @ts-ignore
+import imgPhysio from '@/assets/6d718340-4c23-4811-8392-336b4e74bd65_WhatsApp-Image-2024-03-20-at-23.49.32.webp';
 
 export function Header() {
-  const imgPhysio = 'src/assets/6d718340-4c23-4811-8392-336b4e74bd65_WhatsApp-Image-2024-03-20-at-23.49.32.webp'
-
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
