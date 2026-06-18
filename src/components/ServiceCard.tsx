@@ -35,7 +35,7 @@ export function ServiceCard({ title, description, image, buttonText, isPrimary }
             {description}
           </p>
           <button className="mt-3 bg-white text-[#1E3A8A] text-[11px] font-bold py-2 px-6 rounded-full inline-flex items-center gap-1 hover:bg-gray-50 transition-colors">
-            {buttonText} <ArrowRight size={12} />
+            <a href="https://wa.me/558196981869" target="_blank" rel="noopener noreferrer">{buttonText}</a>
           </button>
         </div>
         <div className="absolute -right-4 -bottom-4 w-40 h-40 bg-white/5 rounded-full blur-2xl"></div>
