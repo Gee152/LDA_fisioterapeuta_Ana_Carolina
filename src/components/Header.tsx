@@ -15,7 +15,7 @@ export function Header() {
         <div className="w-20 h-20 bg-[#F4C2C2] rounded-full border-4 border-white shadow-lg flex items-center justify-center overflow-hidden z-10 relative">
           <img 
             src={imgPhysio} 
-            alt="Casa do Pet Profile" 
+            alt="avatar-fisio" 
             className="w-full h-full object-cover"
           />
         </div>
@@ -26,7 +26,7 @@ export function Header() {
       </h1>
       
       <p className="text-[#1F2937] text-xs font-medium opacity-80 mt-1 mb-4">
-        Ortopedista e Traumatologista
+        Doula e Fisioterapeuta Pélvica
       </p>
 
       <div className="flex gap-3 mt-1">
