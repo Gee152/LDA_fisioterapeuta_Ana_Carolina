@@ -11,7 +11,7 @@ export function LocationCard() {
       className="bg-white rounded-[32px] p-4 shadow-sm border border-gray-100 flex items-center justify-between w-full group cursor-pointer relative overflow-hidden h-[90px]"
     >
        <div className="absolute right-0 top-0 w-32 h-32 opacity-10">
-         <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover" />
+         <img className="w-full h-full object-cover" />
        </div>
 
       <div className="flex items-center gap-3 relative z-10 w-2/3">

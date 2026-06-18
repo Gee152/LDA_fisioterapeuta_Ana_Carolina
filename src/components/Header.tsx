@@ -2,6 +2,8 @@ import { MapPin, Instagram, Facebook, Phone } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export function Header() {
+  const imgPhysio = 'src/assets/6d718340-4c23-4811-8392-336b4e74bd65_WhatsApp-Image-2024-03-20-at-23.49.32.webp'
+
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
@@ -12,7 +14,7 @@ export function Header() {
       <div className="relative mb-3 group">
         <div className="w-20 h-20 bg-[#F4C2C2] rounded-full border-4 border-white shadow-lg flex items-center justify-center overflow-hidden z-10 relative">
           <img 
-            src="src/assets/6d718340-4c23-4811-8392-336b4e74bd65_WhatsApp-Image-2024-03-20-at-23.49.32.webp" 
+            src={imgPhysio} 
             alt="Casa do Pet Profile" 
             className="w-full h-full object-cover"
           />
