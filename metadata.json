@@ -1,0 +1,7 @@
+{
+  "name": "Linktree Premium - Carol Quiros",
+  "description": "Página Linktree Premium para clínica de fisioterapia",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"],
+  "imgPhysio": "src/assets/6d718340-4c23-4811-8392-336b4e74bd65_WhatsApp-Image-2024-03-20-at-23.49.32.webp"
+}
