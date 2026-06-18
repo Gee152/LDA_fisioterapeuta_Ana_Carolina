@@ -1,4 +1,6 @@
 import { motion } from 'motion/react';
+//@ts-ignore
+import image from '@/assets/image.png';
 
 export function Plans() {
   return (
@@ -13,7 +15,7 @@ export function Plans() {
       </div>
 
       <div className="flex gap-3 overflow-x-auto snap-x pb-2 w-full scrollbar-hide px-1" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-        <img src="src/assets/image.png" alt="Planos atendindos" />
+        <img src={image} alt="Planos atendindos" />
       </div>
     </motion.div>
   );
