@@ -1,3 +1,6 @@
+//@ts-ignore
+import logoKonoha from '@/assets/8987bd130641623.6184473f5678a.png';
+
 export function Footer() {
   const year = new Date().getFullYear()
   
@@ -17,7 +20,7 @@ export function Footer() {
         <p className="text-[9px] font-bold text-[#1F2937]/50 uppercase tracking-[0.2em] py-1">
           Equipe de desenvolvimento: KonohaTech
         </p>
-         <img src="src/assets/8987bd130641623.6184473f5678a.png" alt="KonohaTech" className="w-4 h-4 mb-1" />
+         <img src={logoKonoha} alt="KonohaTech" className="w-4 h-4 mb-1" />
       </div>
     </footer>
   );
