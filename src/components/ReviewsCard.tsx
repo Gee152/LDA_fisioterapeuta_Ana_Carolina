@@ -7,9 +7,9 @@ interface Review {
 }
 
 const reviews: Review[] = [
-  { stars: 5, text: "Excelente atendimento e muito carinho com os animais." },
-  { stars: 5, text: "Meu cachorro ama o banho e tosa da Casa do Pet." },
-  { stars: 5, text: "Equipe atenciosa e veterinários excelentes." }
+  { stars: 5, text: "Excelente atendimento, atenciosa e prestativa." },
+  { stars: 5, text: "Meu tratamento deu resultado antes do que esperava." },
+  { stars: 5, text: "Recomendo a Dra. Ana Carolina, excelente profissional." }
 ];
 
 export function ReviewsCard() {

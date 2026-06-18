@@ -13,7 +13,7 @@ export function Footer() {
       </div>
       <div className="flex justify-center gap-4 text-[10px] font-medium text-gray-400 mt-2">
         <p className="text-[9px] font-bold text-[#1F2937]/50 uppercase tracking-[0.2em]">
-          © {year} Dra. Carol Quiros Silva
+          © {year} Dra. Carol Silva Quiros
         </p>       
       </div>
       <div className="flex justify-center  text-[10px] font-medium text-gray-400 mt-2">

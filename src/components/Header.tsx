@@ -22,11 +22,11 @@ export function Header() {
       </div>
       
       <h1 className="text-[#00000] font-bold text-2xl tracking-tight" style={{ fontFamily: "'Arial Black', sans-serif" }}>
-        Dra. Ana Carolina Quiros Silva 
+        Dra. Ana Carolina Silva Quiros
       </h1>
       
       <p className="text-[#1F2937] text-xs font-medium opacity-80 mt-1 mb-4">
-        Cuidando do seu melhor amigo com amor e dedicação.
+        Ortopedista e Traumatologista
       </p>
 
       <div className="flex gap-3 mt-1">
