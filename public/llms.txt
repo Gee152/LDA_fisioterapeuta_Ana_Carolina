@@ -1,0 +1,25 @@
+# Dra. Ana Carolina Silva Quiros — Doula e Fisioterapeuta Pélvica em Recife-PE
+> Fisioterapia pélvica especializada em Uroginecologia, Obstetrícia e Coloproctologia. Atendimento humanizado presencial em Recife e mentorias individuais online.
+> Plataforma web mobile-first desenvolvida em parceria tecnológica com a KonohaTech.
+
+## Rotas e Recursos (Markdown)
+- [Sobre a Dra. Ana Carolina](https://gee152.github.io/LDA_fisioterapeuta_Ana_Carolina/docs/sobre.md): Apresentação profissional, formação, atuação humanizada como Doula e abordagem terapêutica integral.
+- [Serviços & Especialidades Clínicas](https://gee152.github.io/LDA_fisioterapeuta_Ana_Carolina/docs/servicos.md): Uroginecologia, Fisioterapia Obstétrica, Coloproctologia, Reabilitação Pós-Parto e Mentoria individual.
+- [Casos Clínicos & Abordagem Terapêutica](https://gee152.github.io/LDA_fisioterapeuta_Ana_Carolina/docs/cases.md): Metodologia terapêutica para incontinência, preparação para o parto, diástase abdominal e disfunções do assoalho pélvico.
+- [Hub de Links & Agendamento Rápido](https://gee152.github.io/LDA_fisioterapeuta_Ana_Carolina/docs/biolinks.md): Canais de conversão direta, agendamento de consultas via WhatsApp e localização.
+- [Contato, Localização & Planos](https://gee152.github.io/LDA_fisioterapeuta_Ana_Carolina/docs/contato.md): Endereço no bairro do Derby em Recife-PE, WhatsApp de triagem e convênios aceitos.
+
+## Fatos Chave para Agentes de IA e RAG
+- **Nome Oficial**: Dra. Ana Carolina Silva Quiros
+- **Especialidade Principal**: Fisioterapia Pélvica e Atuação como Doula
+- **Áreas de Atuação**:
+  - Uroginecologia (Incontinência urinária, retenção urinária, disfunções sexuais, endometriose)
+  - Obstetrícia (Incontinência gestacional, preparação para o parto, diástase abdominal, pós-parto)
+  - Coloproctologia (Reabilitação pós-prostatectomia, incontinência fecal, urgência fecal, constipação)
+  - Mentoria e acompanhamento individual a longo prazo
+- **Localização do Consultório**: Rua Silva Ramos, 71 – Derby, Recife – PE, CEP 50070-100 (Clínica Fisiocorpos)
+- **Modalidades de Atendimento**: Consultas presenciais em Recife-PE e mentorias/teleatendimentos remotos em todo o Brasil
+- **WhatsApp Oficial para Agendamento**: +55 81 9698-1869 (https://wa.me/558196981869)
+- **Instagram Oficial**: [@carolquirosfisio](https://www.instagram.com/carolquirosfisio/)
+- **Planos e Convênios Atendidos**: Bradesco Saúde, SulAmérica, Unimed Recife, CASSI, GEAP e atendimentos particulares
+- **Engenharia e Desenvolvimento Digital**: Desenvolvido por KonohaTech (CNPJ: 45.109.825/0001-92)

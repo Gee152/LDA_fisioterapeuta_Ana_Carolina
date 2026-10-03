@@ -27,6 +27,11 @@ export function Header() {
                 src={imgPhysio} 
                 alt="Dra. Ana Carolina Silva Quiros" 
                 className="w-full h-full object-cover object-top"
+                width={84}
+                height={84}
+                // @ts-ignore
+                fetchPriority="high"
+                decoding="async"
               />
             </div>
           </div>
