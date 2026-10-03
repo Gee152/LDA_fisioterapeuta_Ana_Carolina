@@ -1,5 +1,5 @@
-import { MessageCircle } from 'lucide-react'
-import { motion } from 'motion/react'
+import { WhatsAppIcon } from './DecorativeAssets';
+import { motion } from 'motion/react';
 
 interface WhatsAppCardProps {
   title: string;
@@ -10,27 +10,36 @@ interface WhatsAppCardProps {
 export function WhatsAppCard({ title, description, buttonText }: WhatsAppCardProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 15 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      whileHover={{ scale: 1.02 }}
-      className="bg-[#25D366] rounded-[32px] p-4 flex items-center justify-between shadow-md h-[80px] w-full cursor-pointer group relative overflow-hidden"
+      whileHover={{ scale: 1.01 }}
+      transition={{ duration: 0.3 }}
+      className="bg-[#A48976] rounded-[28px] p-4 sm:p-5 flex items-center justify-between shadow-[0_6px_20px_rgba(164,137,118,0.22)] w-full select-none"
     >
-      <div className="absolute right-0 top-0 w-32 h-32 bg-white/10 rounded-full blur-2xl transform translate-x-10 -translate-y-10 group-hover:bg-white/20 transition-colors"></div>
-
-      <div className="flex items-center gap-3 relative z-10 w-2/3">
-        <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-inner shrink-0 group-hover:scale-110 transition-transform">
-          <MessageCircle size={24} className="text-[#25D366]" />
+      <div className="flex items-center gap-3.5 relative z-10">
+        <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0 group-hover:scale-105 transition-transform">
+          <WhatsAppIcon className="w-6 h-6" color="#A48976" />
         </div>
         <div>
-          <h3 className="text-white font-bold text-sm leading-tight truncate">{title}</h3>
-          <p className="text-white/90 text-[10px] line-clamp-1 mt-0.5">{description}</p>
+          <h3 className="text-white font-bold text-[11px] uppercase tracking-[0.18em] leading-tight">
+            {title}
+          </h3>
+          <p className="text-white/90 text-[11px] mt-0.5 leading-snug">
+            {description}
+          </p>
         </div>
       </div>
 
-      <button className="bg-white/20 hover:bg-white/30 text-white border border-white/30 px-3 py-2 rounded-2xl text-[10px] font-bold transition-all relative z-10 whitespace-nowrap ml-2">
-        <a href="https://wa.me/558196981869" target="_blank" rel="noopener noreferrer">{buttonText}</a>
-      </button>
+      <a 
+        href="https://wa.me/558196981869" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="border border-white/70 hover:bg-white/15 active:scale-95 text-white px-4 py-2 rounded-full text-[10px] font-bold tracking-[0.16em] uppercase transition-all duration-300 whitespace-nowrap ml-2"
+      >
+        {buttonText}
+      </a>
     </motion.div>
   );
 }
+

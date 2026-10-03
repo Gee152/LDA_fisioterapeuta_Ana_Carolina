@@ -1,14 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-casa-blue: #1E3A8A; 
-  --color-casa-blue-light: #67E8F9;
-  --color-casa-green: #25D366;
-  --color-casa-bg: #F5F7FA;
-  --color-casa-text: #1F2937;
-  
-  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --color-clay-bg: #EFE8E0;
+  --color-clay-outer: #E3D7CC;
+  --color-clay-card: #FAF7F2;
+  --color-clay-subcard: #EAE1D7;
+  --color-clay-dark: #4E3F35;
+  --color-clay-terracotta: #A48976;
+  --color-clay-taupe: #B59E8D;
+  --color-clay-text: #2E221B;
+  --color-clay-muted: #6E5D51;
+  --color-clay-gold: #C49A6C;
+
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
 }
 
 @layer utilities {
@@ -22,9 +27,17 @@
 }
 
 body, html {
-  background-color: #ffe0ef;
-  color: var(--color-casa-text);
+  background-color: #E3D7CC;
+  color: #2E221B;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 0;
-  height: 100%;
+  padding: 0;
+  min-height: 100%;
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: #A48976;
+  color: #FAF7F2;
 }

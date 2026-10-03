@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Feather } from 'lucide-react';
+import { BotanicalBranchCard } from './DecorativeAssets';
 
 interface ServiceCardProps {
   title?: string;
@@ -9,64 +10,46 @@ interface ServiceCardProps {
   isPrimary?: boolean;
 }
 
-export function ServiceCard({ title, description, image, buttonText, isPrimary }: ServiceCardProps) {
-  if (isPrimary) {
-    return (
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        whileHover={{ scale: 1.02 }}
-        className="bg-[#680625] rounded-[32px] p-5 relative overflow-hidden flex items-center justify-between shadow-lg h-[130px] w-full cursor-pointer group"
-      >
-        <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity">
-          <img src={image} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1E3A8A] via-[#1E3A8A]/80 to-transparent"></div>
-        </div>
-        
-        <div className="z-10 w-2/3 relative">
-          <span className="text-[#67E8F9] text-[10px] font-bold uppercase tracking-widest flex items-center gap-1">
-            <Sparkles size={10} /> Combos e serviços
-          </span>
-          <h2 className="text-white font-bold text-xl leading-tight mt-1 truncate">
-            {title}
-          </h2>
-          <p className="text-white/70 text-[10px] mt-1 line-clamp-2">
-            {description}
-          </p>
-          <button className="mt-3 bg-white text-[#1E3A8A] text-[11px] font-bold py-2 px-6 rounded-full inline-flex items-center gap-1 hover:bg-gray-50 transition-colors">
-            <a href="https://wa.me/558196981869" target="_blank" rel="noopener noreferrer">{buttonText}</a>
-          </button>
-        </div>
-        <div className="absolute -right-4 -bottom-4 w-40 h-40 bg-white/5 rounded-full blur-2xl"></div>
-      </motion.div>
-    );
-  }
-
+export function ServiceCard({ description, buttonText }: ServiceCardProps) {
   return (
     <motion.div 
-      initial={{ opacity: 0, scale: 0.95 }}
-      whileInView={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, y: 15 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      whileHover={{ y: -2 }}
-      className="bg-white rounded-[32px] p-4 shadow-sm border border-gray-100 h-[120px] flex flex-col justify-between cursor-pointer w-full group relative overflow-hidden"
+      whileHover={{ scale: 1.01 }}
+      transition={{ duration: 0.3 }}
+      className="bg-[#4E3F35] rounded-[28px] p-5 sm:p-6 relative overflow-hidden flex flex-col justify-between shadow-[0_10px_25px_rgba(78,63,53,0.18)] cursor-pointer group select-none min-h-[145px]"
     >
-      <div className="absolute -right-6 -top-6 w-24 h-24 opacity-[0.03] group-hover:opacity-10 transition-opacity rounded-full overflow-hidden">
-        <img src={image} alt="" className="w-full h-full object-cover" />
-      </div>
+      {/* Botanical etched illustration on the right */}
+      <BotanicalBranchCard className="absolute -right-2 -bottom-2 w-40 h-40 pointer-events-none z-0" />
 
-      <div className="w-8 h-8 rounded-full flex items-center justify-center overflow-hidden border border-gray-100 relative z-10 shrink-0">
-        <img src={image} alt="" className="w-full h-full object-cover" />
-      </div>
-      
-      <div className="relative z-10 mt-auto">
-        <h3 className="text-[#1E3A8A] font-bold text-sm leading-tight line-clamp-1">{title}</h3>
-        <p className="text-[9px] text-gray-500 line-clamp-1 mt-0.5">{description}</p>
-      </div>
+      {/* Content */}
+      <div className="relative z-10 w-[78%]">
+        {/* Header Badge */}
+        <div className="flex items-center gap-1.5 text-[#F1E9E2]">
+          <Feather size={12} className="rotate-45" />
+          <span className="text-[10px] font-bold uppercase tracking-[0.2em]">
+            Combos e Serviços
+          </span>
+        </div>
 
-      <button className="text-[9px] font-bold text-[#1E3A8A] flex items-center gap-1 uppercase relative z-10 mt-1.5 group-hover:text-casa-blue-light transition-colors">
-        {buttonText} <span className="text-xs">→</span>
-      </button>
+        {/* Description text */}
+        <p className="text-[#D5C7BB] text-[12px] font-normal leading-relaxed mt-2 mb-4">
+          {description}
+        </p>
+
+        {/* CTA Button */}
+        <a 
+          href="https://wa.me/558196981869" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 bg-[#EFE8E1] hover:bg-white text-[#4E3F35] text-[11px] font-semibold py-2 px-5 rounded-full transition-all duration-300 shadow-sm hover:gap-2 active:scale-95"
+        >
+          <span>{buttonText}</span>
+          <ArrowRight size={13} strokeWidth={2} />
+        </a>
+      </div>
     </motion.div>
   );
 }
+
